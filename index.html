@@ -12,10 +12,10 @@
     <table>
         <tr>
             <td>
-                <img src="imagenes/focoOff.png" alt="foco" id="imgane1" onclick="cambiar">
+                <img src="imag/focoOff.png" alt="foco" id="imagen1" onclick="cambiar1();">
             </td>
             <td>
-                <img src="imagenes/focoOff.png" alt="foco">
+                <img src="imag/focoOff.png" alt="foco" id="iamgen2" onclick="cambiar2();">
             </td>
         </tr>
         <tr>
@@ -28,15 +28,25 @@
         </tr>
     </table>
     <script>
-        function cambiar(){
+        function cambiar2(){
+            let foco = document.getElementById('imagen2');
+
+            if(foco.src.match("focoOff")){
+                foco.src = "imag/focoOn.png"
+            }else{
+                foco.src = "imag/focoOff.png"
+            }
+        }
+        function cambiar1(){
             let foco = document.getElementById('imagen1');
 
             if(foco.src.match("focoOff")){
-                foco.src = "imaganes/focoOn.png"
+                foco.src = "imag/focoOn.png"
             }else{
-                foco.src = "imagenes/focoOff.png"
+                foco.src = "imag/focoOff.png"
             }
         }
+        
     </script>
 </body>
 </html>
