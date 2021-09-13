@@ -7,6 +7,36 @@
     <title>LUCES</title>
 </head>
 <body>
-    
+    <h1>FOCOS INTELIGENTES</h1>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <img src="imagenes/focoOff.png" alt="foco" id="imgane1" onclick="cambiar">
+            </td>
+            <td>
+                <img src="imagenes/focoOff.png" alt="foco">
+            </td>
+        </tr>
+        <tr>
+            <td>Tiempo prendido:</td>
+            <td>Tiempo prendido:</td>
+        </tr>
+        <tr>
+            <td>aqui va un reloj</td>
+            <td>aqui va un reloj</td>
+        </tr>
+    </table>
+    <script>
+        function cambiar(){
+            let foco = document.getElementById('imagen1');
+
+            if(foco.src.match("focoOff")){
+                foco.src = "imaganes/focoOn.png"
+            }else{
+                foco.src = "imagenes/focoOff.png"
+            }
+        }
+    </script>
 </body>
 </html>
